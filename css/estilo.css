@@ -1,0 +1,469 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 16.5px;
+    border-radius: 2px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #0026ff
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    background: rgba(0, 140, 255, 0.719);
+}
+
+.content {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 130%;
+}
+
+nav ul li a:hover {
+    color: #0097fcb7;
+}
+
+.content .header-block {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 450px;
+    background: #00c3ff;
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+}
+
+.header-block img {
+    width: 50%;
+    position: absolute;
+    bottom: 20%;
+    right: 6%;
+    border-radius: 1%;
+}
+
+.header-block .text {
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+}
+
+.header-block .text h2 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 28px;
+    text-align:right;
+    transform: translateX(-20px);
+    transition: transform 0.5s;
+    font-size: 250%;
+}
+
+.header-block .text p {
+    max-width: 200px;
+    color: white;
+    text-align: right;
+    transform: translateX(-20px);
+    transition: transform 0.4s;
+    font-size: 120%;
+}
+/* catalogo de serviço */
+section .Serviços {
+    width: 100vw;
+    padding: 100px;
+}
+
+
+section .filter-card {
+    width: 980px;
+    height: 150px;
+    background: white;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    width: 700px;
+    height: 50px;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    text-indent: 10px;
+    background-color: rgba(211, 211, 211, 0.767);
+}
+
+.title-wrapper-Serviços {
+    margin-top: 200px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+section .card-wrapper {
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 30px;
+    padding-top: 50px;
+    color: rgb(0, 0, 0);
+}
+
+section .card-item {
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-content {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-item img {
+    width: 70%;
+    border-radius: 4%;
+}
+
+.card-item h3 {
+    width: 40%;
+    text-align: center;
+   
+}
+
+.card-item p {
+    width: 80%;
+    text-align: center;
+    
+  }
+  
+  .card-item button {
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    background-color: rgb(245, 240, 240);
+    border: 0px;
+    margin-right: 110px;
+    margin-top: 30px;
+  }
+
+  .card-item a {
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    background-color: rgb(245, 240, 240);
+    border: 0px;
+    margin-left: 110px;
+    margin-top: -43px;
+  }
+
+  .card-item a:hover {
+    background: #006cb4b7;
+    color: white;
+  }
+  
+  .card-item button:hover {
+    background: #006cb4b7;
+    color: white;
+  }
+
+  .Sobre {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 10px;
+      color: white;
+      
+  }
+
+  .Sobre-content {
+      max-width: 1000px;
+      min-width: 300px;
+      height: 600px;
+      background: white;
+      margin: 0 auto;
+      border-radius: 8px;
+      z-index: 10;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      color: rgb(0, 0, 0);
+  }
+
+
+  .left {
+      width: 25%;
+      min-width: 300px;
+      height: 100%;
+      background: black;
+      border-radius: 8px;
+  }
+
+  .right{
+      width: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 2%;
+  }
+
+  .right h3 {
+      text-align: center;
+      width: 90%;
+  }
+
+  .right p {
+      max-width: 90%;
+      font-size: 1em;
+      letter-spacing: 2px;
+      text-align: right;
+      color: rgb(0, 0, 0);
+  }
+
+  .right img {
+    width: 90%;
+    border-radius: 2%;
+    top: 40px;
+    position: relative;
+}
+
+  /* Feedbacks */
+  .Feedbacks {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 0px;
+  }
+
+  .title-wrapper-Feedbacks {
+      padding: 20px 0px;
+      color: white;
+  }
+
+  .feature-card-block {
+      max-width: 1000px;
+      min-width: 300px;
+      height: 600px;
+      background: white;
+      margin: 0 auto;
+      border-radius:8px;
+      z-index: 10;
+      padding: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+      grid-gap: 30px;
+  }
+
+  .feature-card-item {
+      max-width: 800px;
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid black;
+      border-radius: 4px;
+  }
+
+  .feature-text-content {
+      max-width: 60%;
+      margin: 5px;
+  }
+  
+  .feature-card-item img {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+  }
+/* Footer */
+  footer {
+      width: 100%;
+      height: 250px;
+  }
+
+  footer .main {
+      width: 100%;
+      height: 200px;
+      background: rgba(0, 140, 255, 0.719);
+      padding: 20px 10px;
+  }
+
+  .footer-Links {
+      max-width: 1000px;
+      min-width: 300px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 20px;
+  }
+
+  .footer-company,
+  .footer-options,
+  .footer-contact,
+  .footer-social {
+      color: rgb(255, 255, 255);
+      height: 100%;
+      min-height: 100px;
+  }
+
+  .footer-Links h4 {
+      margin-bottom: 10px;
+  }
+
+  .footer-Links {
+      margin-bottom: 8px;
+  }
+
+  .main .footer-social img {
+      width: 32px;
+      height: 32px;
+  }
+
+  footer .last {
+      width: 100%;
+      height: 50px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+/*Ajuste pra deixar responsivo*/
+  @media screen and (max-width: 720px) {
+      nav ul li {
+          display: none;
+      }
+
+      .header-block img {
+          width: 40%;
+          position: relative;
+          right: -55%;
+          top: 40%;
+      }
+
+      .header-block .text{
+          position:absolute;
+          bottom: 10%;
+          left: 15;
+      }
+    section .filter-card {
+        width: 390px;
+        padding: 0px 10px;
+    }
+    
+    .Sobre {
+        margin-top: 100px;
+    }
+    .title-wrapper-Sobre {
+        margin-bottom: 20px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+    }
+    .right p {
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .right h3 {
+        text-align: center;
+    }
+    .right img {
+        width: 100%;
+    }    
+    .Feedbacks {
+        height: 100%;
+    }
+
+    .feature-card-block {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        height: 100%;
+        padding: 0%;
+        position: absolute;
+    }
+
+    footer .main {
+        height: 100%;
+    }
+
+    .footer-Links {
+        flex-direction: column;
+        width: 90%;
+        padding-top: 30%;
+    }
+}

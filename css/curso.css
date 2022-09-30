@@ -1,0 +1,43 @@
+*{
+    font-family: 'Shippori Antique', sans-serif;
+}
+
+nav {
+    width: 1600px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00ccff;
+    color: white;
+}
+
+nav h1 {
+    margin-left: 600px;
+}
+
+footer .last {
+    width: 1600px;
+    height: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00ccff;
+}
+
+@media screen and (max-width: 720px) {
+    nav{
+        display: none;
+        display: flex;
+        position: relative;
+        right: 540px;
+    }
+
+    footer .last {
+        display: none;
+        display: flex;
+        position: relative;
+        right: 540px;
+    }
+}
